@@ -10,8 +10,9 @@ import scala.Tuple2;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.util.List;
+
+import static com.gladunalexander.wordcounter.utils.PropertyHolder.ROOT_DIR;
 
 /**
  * Created by user on 08/09/2017.
@@ -19,8 +20,6 @@ import java.util.List;
 
 @RestController
 public class WorldCounterController {
-
-    private static final String ROOT_DIR = "C:\\Users\\user\\IdeaProjects\\WordCounter\\src\\main\\resources\\files";
 
     @Autowired
     private WordCounterService wordCounterService;
